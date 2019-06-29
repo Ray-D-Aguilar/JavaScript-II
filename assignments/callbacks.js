@@ -45,7 +45,15 @@ last(items, (lastItem) => {
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
+  return cb(x, y);
 }
+
+function add(num1, num2) {
+  return num1 + num2;
+}
+
+let product = sumNums(9, 3, add);
+console.log(product);
 
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
