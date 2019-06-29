@@ -15,8 +15,7 @@ const counter = () => {
   // Return a function that when invoked increments and returns a counter variable.
   let count = 0;
   return function() {
-    count = count + 1;
-    return count;
+    return count++;
   }
 
 };
@@ -24,6 +23,8 @@ const counter = () => {
 // newCounter(); // 1
 // newCounter(); // 2
 const newCounter = counter(); //newCounter is the anonymous function inside of counter
+console.log(newCounter());
+console.log(newCounter());
 console.log(newCounter());
 
 
