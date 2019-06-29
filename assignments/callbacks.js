@@ -79,7 +79,28 @@ console.log(product2);
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
-}
+
+  const checkArr = () => {
+    for (let i = 0; i < item.length; i++)
+      if (item[i] === list) {
+        return true;
+      } else {
+        return false;
+      }
+  };
+  cb(checkArr);
+};
+
+contains(items, 'Pencil', result => {
+  console.log(result ? 'Pencil is in the array': 'Pencil is not in the array');
+})
+
+
+
+
+
+
+
 
 /* STRETCH PROBLEM */
 
