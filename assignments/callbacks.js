@@ -15,7 +15,7 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
   // Higher order function using "cb" as the call back
   function firstItem(arr, cb) {
     return cb(arr[0]);
-  }
+  }  
 
   // Function invocation 
   firstItem(items, function(first) {
